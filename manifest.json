@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "网页二维码生成器",
+  "version": "1.0",
+  "description": "自动生成当前网页的二维码",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "获取二维码"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["qrious.min.js", "content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["qrious.min.js", "styles.css"],
+    "matches": ["<all_urls>"]
+  }]
+}

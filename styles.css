@@ -1,0 +1,93 @@
+/* 只保留插件相关的样式，移除所有全局样式 */
+.qr-badge[data-qr-extension] {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    position: fixed !important;
+    right: 30px !important;
+    bottom: 30px !important;
+    z-index: 2147483647 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.qr-badge[data-qr-extension]:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.qr-modal[data-qr-extension] {
+    position: fixed !important;
+    display: none;
+    background: white !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2) !important;
+    z-index: 2147483646 !important;
+    width: 200px !important;
+    height: auto !important;
+    right: 30px !important;
+    bottom: 80px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+
+.qr-modal[data-qr-extension].show {
+    display: block;
+}
+
+.qr-container[data-qr-extension] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.qr-extension-canvas {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+}
+
+.qr-extension-site-name {
+    color: #666 !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    padding: 0 5px !important;
+    box-sizing: border-box !important;
+    margin: 5px 0 0 0 !important;
+}
+
+.qr-extension-page-title {
+    color: #333 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    padding: 0 5px !important;
+    box-sizing: border-box !important;
+    margin: 5px 0 0 0 !important;
+}
+
